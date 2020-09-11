@@ -203,7 +203,7 @@
 
         function paragraphsCount(text) {
             let match = text.trim().match(/\n\s*\n/gi);
-            return match != null ? match.length : text.trim() != '' ? 1 : 0;
+            return match != null ? match.length + 1 : text.trim() != '' ? 1 : 0;
         }
 
     </script>
